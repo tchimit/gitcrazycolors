@@ -8,11 +8,19 @@
 </head>
 <body>
     <h1>Git Demo Page!</h1>
-    <p>Using git branches: We have our main branch called master. At the same time we open our second branch called 
+    <p>1. Using git branches: We have our main branch called master. At the same time we open our second branch called 
         for example crazycolors typing "git branch crazycolors" and start making changes to files. We still can return
         to our master branch typing "git checkout master" but changes to crazycolors won't appear on it. </p>
-    <p>Merging second branch to our master: on master branch add "git merge crazycolors"</p>
-    <p>P.S. key "q" quites git log list; if there's a merging conflict type "git merge --abort"</p>
+    <p>2. Merging second branch to our master: on master branch add "git merge crazycolors"</p>
+    <p>3. Pressing "q" quites git log list.</p>
+    <p>4. If there's a merging conflict type "git merge --abort"</p>
+    <p>5. To download your file to GitHub: open new repository on github and name it. Copy and paste "git remote add origin https://github.com/tchimit/gitcrazycolors.git"
+        then type "git push -u origin master"
+    </p>
+    <p>6. If your collaborator adds new commit to your file on github (you need to give permission first) you won't see 
+        it on your machine (only on github), therefore you need to download the file back to your computer:
+        "git pull origin master"
+    </p>
     <script src="app.js"></script>
 </body>
 </html>
